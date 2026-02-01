@@ -1,0 +1,155 @@
+/* General layout */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 10px;
+    background: #e4ecf0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+
+/* Headings */
+
+h2 {
+    color: #444;
+}
+
+.login-container h2 {
+    text-align: center;  
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background: #c8bebb39;
+}
+
+table th, table td {
+    border: 1px solid #b5b5b554;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background: #9a7d589a;
+}
+
+/* Buttons and links */
+a, button {
+    display: inline-block;
+    padding: 4px 8px;
+    margin: 2px;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    background: #37728dbb;
+    color: #fff;
+    cursor: pointer;
+}
+
+a:hover, button:hover {
+    background: #5C93AA;
+}
+
+/* Form styling */
+form {
+    max-width: 400px;
+    margin: 8px;         /* centers the form horizontally */
+    padding: 20px;
+    background: #e4ded7c9;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+form input { 
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+
+#login-form {
+    max-width: 400px;
+    margin: 40px auto;         /* centers the form horizontally */
+    padding: 20px;
+    background: #e4ded7c9;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+#login-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;    /* ensures padding doesn't overflow */
+}
+
+
+.validation-msg {
+    font-size: 13px;
+    margin-top: -8px;
+    margin-bottom: 10px;
+}
+
+/* Basic search input */
+#search, #attendeeSearch{
+    padding: 6px 10px;
+    border: 1px solid #ababab;
+    border-radius: 8px;
+    width: 250px;  
+    margin-bottom: 15px;     
+    font-size: 14px;
+    background-color: #b5b5b5a8;
+}
+
+#search:focus, #attendeeSearch:focus{
+    border-color: #f7f1f1a8;
+    outline: none;
+    box-shadow: 0 0 4px rgba(0, 86, 179, 0.3);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:#92abad; 
+    color:#fff; 
+    height: 80px;
+    padding:10px 20px;
+}
+
+header h1 {
+    color: #d0d0d0;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+footer {
+    background:#92abad; 
+    color:#fff; 
+    padding: 10px; 
+    text-align: center;
+}
